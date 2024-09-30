@@ -1,0 +1,124 @@
+:root {
+  /* default theme color */
+  /* can be overrided by uses `themeConfig` option */
+  --slidev-theme-primary: #ffa100;
+}
+
+.katex,
+.mathnormal {
+  font-family: "Times New Roman" !important;
+}
+
+html:not(.dark) {
+  h1 {
+    color: #ffffff;
+    background-color: var(--slidev-theme-primary);
+  }
+}
+
+html.dark {
+  h1 {
+    color: var(--slidev-theme-primary);
+    background-color: #000000;
+    border-bottom: 1px solid var(--slidev-theme-primary);
+  }
+}
+
+.slidev-layout {
+  @apply p0;
+
+  h1,
+  h2,
+  h3 {
+    font-weight: 700;
+  }
+}
+
+.slidev-layout:not(.mini) {
+  p,
+  li,
+  table,
+  kbd,
+  pre,
+  code {
+    font-size: 24pt;
+    line-height: 1.2em;
+  }
+
+  pre, pre > code {
+    font-size: 13pt;
+  }
+
+  li {
+    @apply my-16px;
+  }
+}
+
+.slidev-layout.mini.mini18, .grid>.slidev-layout.default {
+  p,
+  li,
+  table,
+  kbd,
+  code {
+    font-size: 18pt;
+    line-height: 1.2em;
+  }
+
+  pre, pre > code {
+    font-size: 13pt;
+  }
+
+  li {
+    @apply my-8px;
+  }
+}
+
+li li {
+  font-size: 90% !important;
+}
+
+.slidev-layout {
+  h1 {
+    @apply pt-0.7em pb-0.5em mb-0.4em;
+    font-size: 36pt;
+  }
+
+  table {
+    @apply mx-2.5rem;
+  }
+}
+
+.slidev-layout.default > * {
+  @apply px-2.5rem;
+}
+
+.slidev-layout {
+  blockquote {
+    @apply px-0.5em pt-1em mx-2.5rem;
+    border-left-width: 1em;
+  }
+
+  table {
+    max-width: calc(100% - 5rem);
+  }
+}
+
+.slidev-layout.cover {
+  background-image: url("../assets/images/kstm.png");
+  background-repeat: no-repeat;
+  background-position: right 20pt bottom 10pt;
+  background-size: 150pt;
+  @apply p0;
+
+  h1 {
+    @apply text-6xl leading-20;
+    font-size: 48pt;
+    font-weight: bold;
+    padding-top: 300px;
+    padding-bottom: 0.2em;
+  }
+}
+
+li:has(> .slidev-vclick-hidden) {
+  list-style-type: none;
+}
