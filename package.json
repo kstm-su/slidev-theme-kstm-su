@@ -1,6 +1,6 @@
 {
   "name": "@kstm-su/slidev-theme-kstm",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "keywords": [
     "slidev-theme",
@@ -32,8 +32,8 @@
     "highlighter": "Prism",
     "defaults": {
       "fonts": {
-        "sans": "Roboto,Arial,Noto Sans Japanese",
-        "mono": "Inconsolata,Consolas,Noto Sans Japanese",
+        "sans": "Roboto,Arial,Noto Sans Japanese,Noto Sans CJK JP,ＭＳ ゴシック",
+        "mono": "Inconsolata,Consolas,Noto Sans Japanese,Noto Sans CJK JP,ＭＳ ゴシック",
         "weights": "400,700"
       }
     }
