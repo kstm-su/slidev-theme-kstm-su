@@ -73,6 +73,25 @@ html.dark {
   }
 }
 
+.slidev-layout.mini.mini20, .grid>.slidev-layout.default {
+  p,
+  li,
+  table,
+  kbd,
+  code {
+    font-size: 20pt;
+    line-height: 1.2em;
+  }
+
+  pre, pre > code {
+    font-size: 13pt;
+  }
+
+  li {
+    @apply my-10px;
+  }
+}
+
 li li {
   font-size: 90% !important;
 }
